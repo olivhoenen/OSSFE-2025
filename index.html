@@ -26,8 +26,8 @@
 	  <h2>Outline</h2>
 	  <ul>
 	    <li>Introduction to IMAS</li>
-	    <li>Open sourcing IMAS</li>
-	    <li>Perspectives</li>
+	    <li>Open sourcing at ITER</li>
+	    <li>Challenges and opportunities</li>
 	  </ul>
 	</section>
 
@@ -52,14 +52,15 @@
 
 	  <section>
 	    <h3>A brief history</h3>
-	    <span style="font-size: 36px">
-	      <ul>
-		<li class="fragment" data-fragment-index="2"><b>2003</b>: the Integrated Tokamak Modelling (ITM) starts discussing <b>common data ontology</b> in EU</li>
-		<li class="fragment" data-fragment-index="1"> <b>2011</b>: IMAS design and development started at ITER, building upon ideas from the ITM</li>
+	      <ul style="font-size: 32px">
+		<li class="fragment" data-fragment-index="2"><b>2003</b>: the Integrated Tokamak Modelling (ITM) starts discussing <span style="color: Lime">common data ontology</span> in EU</li>
+		<li class="fragment" data-fragment-index="1"><b>2011</b>: start of IMAS design and development at the ITER Organization (IO), building upon ITM concepts</li>
 		<li class="fragment" data-fragment-index="3"><b>2015</b>: first IMAS <em>prototype</em> published <sup><a href="#/links">1</a></sup> (version controlled ontology: 3.2.0, 30 classes)</li>
-		<li class="fragment" data-fragment-index="4"><b>2024</b>: last version 3 release (3.42.0, 81 classes), and introduction of the version 4</li>
+		<li class="fragment" data-fragment-index="4"><b>2017</b>: WEST tokamak uses IMAS in production for its plasma reconstruction chain <sup><a href="#/links">2</a></sup></li>
+		<li class="fragment" data-fragment-index="5"><b>2021</b>: Heating and current drive workflow in IMAS <sup><a href="#/links">3</a></sup></li>
+		<li class="fragment" data-fragment-index="6"><b>2023</b>: IMAS workflow for energetic particle stability <sup><a href="#/links">4</a></sup></li>
+		<li class="fragment" data-fragment-index="7"><b>2024</b>: end of version 3 development (3.42.0, 81 classes), introducing version 4</li>
 	      </ul>
-	    </span>
 	  </section>
 
 	  <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.77, 0.00, 0.17, 0.99)">
@@ -348,7 +349,7 @@
 		<li class="fragment"
 		    data-fragment-index="6">
 		  <b>2024</b>: Fusion Private Sector Workshop,<br>
-		  listing software with GIP from IO,<br>
+		  listing software with generated IP from IO,<br>
 		  approved <span style="color: Lime">open sourcing GIP codes</span></li>
 		<li class="fragment"
 		    data-fragment-index="7">
@@ -484,7 +485,7 @@
 	  </section>
 
 	  <section>
-	    <h3>Available soon on GitHub...</h3>
+	    <h3>Available soon on GitHub</h3>
 	    <div class="r-vstack"
 		 style="font-size: 24px;">
 	      <div class="fragment fade-up"
@@ -537,7 +538,7 @@
 	  </section>
 
 	  <section>
-	    <h3>The case of software with BIP</h3>
+	    <h3>The case of software with background IP</h3>
 	    <div class="r-vstack">
 	      <ul style="font-size: 28px">
 		<li class="fragment"
@@ -547,7 +548,7 @@
 		<li class="fragment"
 		    data-fragment-index="3">Releasing GIP that contains BIP requires BIP to be open</li>
 		<li class="fragment"
-		    data-fragment-index="4">IO asked some code owners (EC, labs) about the possibility to release their BIP as open source <span style="color: Lime">&rarr; a general trend in fusion?</span></li>
+		    data-fragment-index="4">IO asked some code owners about the possibility to release their BIP as open source <span style="color: Lime">&rarr; a general trend in fusion?</span></li>
 	      </ul>
 	      <img class="fragment"
 		   data-fragment-index="4"
@@ -558,7 +559,7 @@
 
 	  <section>
 	    <h3>Contributing back</h3>
-	    <h5 class="r-fit-text">Contributing back is key for project sustainability and can take several forms</h5>
+	    <h5 class="r-fit-text">A key aspect for project sustainability, it can take several forms</h5>
 	    <table class="fragment"
 		   style="font-size: 24px; color: white;">
 	      <thead>
@@ -575,7 +576,7 @@
 		  <td><a href="https://github.com/google-deepmind/torax">TORAX</a></td>
 		</tr>
 		<tr>
-		  <td>support contracts (e.g. new features)</td>
+		  <td>support tasks (e.g. new features)</td>
 		  <td><a href="https://github.com/multiscale/muscle3">MUSCLE3</a></td>
 		</tr>
 		<tr>
@@ -594,6 +595,14 @@
 	      </tbody>
 	    </table>
 	  </section>
+
+	  <section>
+	    <h3>Adapting codes in IMAS</h3>
+	  </section>
+	    
+	  <section>
+	    <h3>Mapping data to IMAS</h3>
+	  </section>
 	  
 	  <section data-visibility="hidden">
 	    <h3>Migrating to a new developer platform</h3>
@@ -606,17 +615,21 @@
 	    - clash of names (packages, etc...)
 	    - transition period in-between two platforms (if migration can not be done in one go)
 	    Adapting communication channels
+
+
+	    - mapping effort for exp data to support validation of IMAS apps
+	      - reduction of the number of dupplicated software, and concentration of the effort (long term)
+	      - FAIR data + opening of the metadata
 	  </section>
 
-	  <section data-visibility="hidden">
+	  <section>
 	    <h3>Limitations and perspectives</h3>
-	    Towards a general data standard for fusion
+	    <h5 class="r-fit-text">Towards a data standard for the fusion community</h5>
 	    <ul>
-	      <li>Very few attempts on stellarators: some IDS are geared towards tokamaks (axisymmetric description)</li>
+	      <li>Few attempts on stellarators concepts (some IDS are geared towards tokamaks)</li>
+	      <li>The data model has become too big &rarr; needs trimming but backward compatibility is a key aspect</li>
+	      <li>Data model and interfaces are closely intricated &rarr; better separation would allow for improved flexibity</li>
 	      <li></li>
-	      - mapping effort for exp data to support validation of IMAS apps
-	    - reduction of the number of dupplicated software, and concentration of the effort (long term)
-	    - FAIR data + opening of the metadata
 	  </section>
 	</section>
 
@@ -624,20 +637,22 @@
 
 	<section>
 	  <h2>Summary</h2>
-	  <ul style="font-size: 36px">
-	    <li class="fragment"
-		data-fragment-index="1">GIP software at IO can finally be Open Source!</li>
-	    <li class="fragment"
-		data-fragment-index="1"><a href="#/imas-dd">IMAS-Data-Dictionary</a>, <a href="#/imas-python">IMAS-Python</a> and <a href="#/pcssp">PCSSP</a> are available right now</li>
-	    <li class="fragment"
-		data-fragment-index="1">BIP software &rarr; IO asked owners for open license, already received some positive answers!</li>
-	    <li class="fragment"
-		data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
-	    <li class="fragment"
-		data-fragment-index="3">Our hope: reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
-	    <li class="fragment"
-		data-fragment-index="4">Facilitate engagement from persons outside fusion</li>
-	  </ul>
+	  <span style="font-size: 32px">
+	    <ul>
+	      <li class="fragment"
+		  data-fragment-index="1">GIP software at IO can now be made open source</li>
+	      <li class="fragment"
+		  data-fragment-index="1"><a href="#/imas-dd">IMAS-Data-Dictionary</a>, <a href="#/imas-python">IMAS-Python</a> and <a href="#/pcssp">PCSSP</a> are open access</li>
+	      <li class="fragment"
+		  data-fragment-index="1">Software with BIP &rarr; IO asked owners for open licenses</li>
+	      <li class="fragment"
+		  data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
+	      <li class="fragment"
+		  data-fragment-index="3">Our hope: reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
+	      <li class="fragment"
+		  data-fragment-index="4">Facilitate engagement from persons outside fusion</li>
+	    </ul>
+	  </span>
 	</section>
 	  
 	<section id="links">
@@ -645,6 +660,9 @@
 	  <small>
 	    <ol>
 	      <li><em><a href="https://iopscience.iop.org/article/10.1088/0029-5515/55/12/123006">F. Imbeaux et al 2015 Nucl. Fusion 55 123006</a></em></li>
+	      <li><em><a href="https://hal.science/hal-03117771v1">L. Fleury et al 2020 SOFT Conference</a></em></li>
+	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/ac34d8">M. Schneider et al 2021 Nucl. Fusion 61 126058</a></em></li>
+	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/acf056">V.-A. Popa et al 2023 Nucl. Fusion 63 126008</a></em></li>
 	      <li><em><a href="https://imas-data-dictionary.readthedocs.io/en/latest/ggd_guide/doc.html">GGD: the Generalized Grid Description</a></em></li>
 	    </ol>
 	  </small>
