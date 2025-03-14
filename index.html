@@ -597,11 +597,61 @@
 	  </section>
 
 	  <section>
-	    <h3>Adapting codes in IMAS</h3>
+	    <h3>Adapting a code to IMAS</h3>
+	    <dl>
+	      <dt><b>Why?</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>code shall run within ITER suite</li>
+		  <li>benchmarking exercise with similar codes</li>
+		  <li>standardize machine description</li>
+		</ul>
+	      </dd>
+	      <dt><b>How?</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>I/O data must be defined by following the IMAS DD</li>
+		  <li>non-intrusive adaptation with a <em>wrapper</em></li>
+		  <li>depends on targetted use (standalone, coupling, ...)</li>
+		</ul>
+	      </dd>
+	      <dt><b>License</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>always add <b>a</b> license for your source code</li>
+		  <li>consider open licenses and open repositories</li>
+		</ul>
+	      </dd>
+	    </dl>
 	  </section>
 	    
 	  <section>
-	    <h3>Mapping data to IMAS</h3>
+	    <h3>Mapping existing data in IMAS</h3>
+	    <dl>
+	      <dt><b>Motivations</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>prepare ITER operation: validate tools, training</li>
+		  <li>prepare more ambitious multi-machines databases</li>
+		  <li>use available IMAS application to improve modelling capability in given areas</li>
+		</ul>
+	      </dd>
+	      <dt><b>Caveats</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>involve a large effort from experts (sparse resources)</li>
+		  <li>non-backward compatible changes in IMAS DD</li>
+		  <li>lack of immediate pay off</li>
+		</ul>
+	      </dd>
+	      <dt><b>Mitigations</b></dt>
+	      <dd>
+		<ul style="font-size: 32px">
+		  <li>targetted effort, identify success stories</li>
+		  <li>share mappings and experience on open platforms<sup><a href="#/links">6,7</a></sup></li>
+		</ul>
+	      </dd>
+	    </dl>	    
 	  </section>
 	  
 	  <section data-visibility="hidden">
@@ -615,8 +665,6 @@
 	    - clash of names (packages, etc...)
 	    - transition period in-between two platforms (if migration can not be done in one go)
 	    Adapting communication channels
-
-
 	    - mapping effort for exp data to support validation of IMAS apps
 	      - reduction of the number of dupplicated software, and concentration of the effort (long term)
 	      - FAIR data + opening of the metadata
@@ -625,15 +673,24 @@
 	  <section>
 	    <h3>Limitations and perspectives</h3>
 	    <h5 class="r-fit-text">Towards a data standard for the fusion community</h5>
-	    <ul>
-	      <li>Few attempts on stellarators concepts (some IDS are geared towards tokamaks)</li>
-	      <li>The data model has become too big &rarr; needs trimming but backward compatibility is a key aspect</li>
-	      <li>Data model and interfaces are closely intricated &rarr; better separation would allow for improved flexibity</li>
-	      <li></li>
+	    <div class="r-stack">
+	      <ul style="font-size: 28px">
+		<li class="fragment"
+		    data-fragment-index="1">Little use on stellarators (some IDS lean towards tokamaks)</li>
+		<li class="fragment"
+		    data-fragment-index="2">Mapping experimental data requires resources &rarr; improve sharing of information (documentation, recipes, common mapping syntax)</li>
+		<li class="fragment"
+		    data-fragment-index="3">The data model is too complex &rarr; needs trimming (but backward compatibility remains fundamental)</li>
+		<li class="fragment"
+		    data-fragment-index="4">Overlap data model/interfaces &rarr; separation for improved flexibity</li>
+		<li class="fragment"
+		    data-fragment-index="5">Initial focus on data providers &rarr; change now towards data consumers</li>
+	      </ul>
+	    </div>
 	  </section>
+
 	</section>
 
-	
 
 	<section>
 	  <h2>Summary</h2>
@@ -664,6 +721,8 @@
 	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/ac34d8">M. Schneider et al 2021 Nucl. Fusion 61 126058</a></em></li>
 	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/acf056">V.-A. Popa et al 2023 Nucl. Fusion 63 126008</a></em></li>
 	      <li><em><a href="https://imas-data-dictionary.readthedocs.io/en/latest/ggd_guide/doc.html">GGD: the Generalized Grid Description</a></em></li>
+	      <li><em><a href="https://github.com/ukaea/IMAS_MASTU_mappings">MAST-U data mappings</a></em></li>
+	      <li><em><a href="https://github.com/ukaea/IMAS_JET_mappings">JET data mappings</a></em></li>
 	    </ol>
 	  </small>
 	</section>
@@ -686,6 +745,7 @@
 	  
 	  plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
       });
+      Reveal.configure({ pdfSeparateFragments: false });
     </script>
   </body>
 </html>
