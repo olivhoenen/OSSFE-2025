@@ -142,7 +142,7 @@
 	    </span>
 	  </section>
 
-	  <section data-background-iframe="https://imas-data-dictionary.readthedocs.io/en/latest/reference_ids.html" data-background-interactive
+	  <section data-background-iframe="https://imas-data-dictionary.readthedocs.io/en/latest/reference_ids.html" data-background-interactive data-preload
 		   id="data-dictionary">
 	    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 	      <h3>Data dictionary</h3>
@@ -468,7 +468,7 @@
 	    </div>
 	  </section>
 
-	  <section id="pcssp" data-background-iframe="https://pcssp.readthedocs.io/en/latest/" data-background-interactive>
+	  <section id="pcssp" data-background-iframe="https://pcssp.readthedocs.io/en/latest/" data-background-interactive data-preload>
 	    <div style="position: absolute; width: 48%; top: 400px; right: -50px; background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 15px; font-size: 24px; text-align: left;">
 	      <h5 class="r-fit-text">The Plasma Control System Simulation Platform </h5>
 	      <div class="r-hstack">
@@ -576,7 +576,7 @@
 		  <td><a href="https://github.com/google-deepmind/torax">TORAX</a></td>
 		</tr>
 		<tr>
-		  <td>support tasks (e.g. new features)</td>
+		  <td>developing new features</td>
 		  <td><a href="https://github.com/multiscale/muscle3">MUSCLE3</a></td>
 		</tr>
 		<tr>
@@ -599,25 +599,34 @@
 	  <section>
 	    <h3>Adapting a code to IMAS</h3>
 	    <dl>
-	      <dt><b>Why?</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="1"><b>Why?</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="1"
+		    style="font-size: 32px">
 		  <li>code shall run within ITER suite</li>
 		  <li>benchmarking exercise with similar codes</li>
 		  <li>standardize machine description</li>
 		</ul>
 	      </dd>
-	      <dt><b>How?</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="2"><b>How?</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="2"
+		    style="font-size: 32px">
 		  <li>I/O data must be defined by following the IMAS DD</li>
 		  <li>non-intrusive adaptation with a <em>wrapper</em></li>
 		  <li>depends on targetted use (standalone, coupling, ...)</li>
 		</ul>
 	      </dd>
-	      <dt><b>License</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="3"><b>License</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="3"
+		    style="font-size: 32px">
 		  <li>always add <b>a</b> license for your source code</li>
 		  <li>consider open licenses and open repositories</li>
 		</ul>
@@ -628,25 +637,34 @@
 	  <section>
 	    <h3>Mapping existing data in IMAS</h3>
 	    <dl>
-	      <dt><b>Motivations</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="1"><b>Motivations</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="1"
+		    style="font-size: 32px">
 		  <li>prepare ITER operation: validate tools, training</li>
 		  <li>prepare more ambitious multi-machines databases</li>
 		  <li>use available IMAS application to improve modelling capability in given areas</li>
 		</ul>
 	      </dd>
-	      <dt><b>Caveats</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="2"><b>Caveats</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="2"
+		    style="font-size: 32px">
 		  <li>involve a large effort from experts (sparse resources)</li>
 		  <li>non-backward compatible changes in IMAS DD</li>
 		  <li>lack of immediate pay off</li>
 		</ul>
 	      </dd>
-	      <dt><b>Mitigations</b></dt>
+	      <dt class="fragment"
+		  data-fragment-index="3"><b>Mitigations</b></dt>
 	      <dd>
-		<ul style="font-size: 32px">
+		<ul class="fragment"
+		    data-fragment-index="3"
+		    style="font-size: 32px">
 		  <li>targetted effort, identify success stories</li>
 		  <li>share mappings and experience on open platforms<sup><a href="#/links">6,7</a></sup></li>
 		</ul>
