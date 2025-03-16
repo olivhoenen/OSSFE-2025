@@ -13,7 +13,7 @@
 	<section>
 	  <h2>Open sourcing IMAS</h2>
 	  <h4>status, challenges and opportunities</h4>
-	  <a href="mailto: Olivier.Hoenen@iter.org">Olivier.Hoenen@iter.org</a>
+	  <a href="mailto: Olivier.Hoenen@iter.org">Olivier.Hoenen@iter.org</a></br>
 	  <div class="r-stack" style="margin: 50px">
 	    <img src="img/logo/iter.svg" height="150">
 	  </div>
@@ -122,24 +122,24 @@
 
 	  <section>
 	    <h3>Data model</h3>
-	    <span style="font-size: 32px">
-	    <ul>
-	      <li>Covers <u>simulation</u> and <u>experimental</u> data
+	    <ul style="font-size: 34px">
+	      <li class="fragment" data-fragment-index="1">Covers <u>simulation</u> and <u>experimental</u> data
 		<ul>
 		  <li>Made of <span style="color: Lime">Interface Data Structures</span> (IDS)</li>
 		  <li>Described in XML in the <a href="#/data-dictionary">Data Dictionary</a></li>
 		</ul>
 	      </li>
-	      <li class="fragment">Made <u>machine agnostic</u> by design
+	      <li class="fragment" data-fragment-index="2">Made <u>machine agnostic</u> by design
 		<ul>
 		  <li>Used in experiments (e.g. WEST, ITER)</li>
 		  <li>Mapping of existing experiments data</li>
+		  <img class="fragment" data-fragment-index="2"
+		       src="img/dd-mapping-survey.png" width="70%">
 		  <li>Support <span style="color: Lime">validation</span> of ITER applications</li>
 		</ul>
 	      </li>
-	      <li class="fragment">Can serve as a <span style="color: Lime">data standard</span> for <em>tokamaks</em> fusion!</li>
+	      <li class="fragment" data-fragment-index="3">Can serve as a <span style="color: Lime">data standard</span> for <em>tokamaks</em> fusion!</li>
 	    </ul>
-	    </span>
 	  </section>
 
 	  <section data-background-iframe="https://imas-data-dictionary.readthedocs.io/en/latest/reference_ids.html" data-background-interactive data-preload
@@ -160,10 +160,10 @@
 	      <div class="fragment fade-up"
 		   data-fragment-index="1"
 		   data-id="access"
-		   style="background: white; color: black; width: 250px; height: 600px; margin: 5px; border-radius: 5px;">
-		data access<br>
+		   style="background: white; color: black; width: 200px; height: 608px; margin-left: -10px; margin: 2px; border-radius: 5px;">
+		<small><b>data access</b></small></br>
 		<div class="r-vstack">
-		  <small><p style="color: gray"><b>API</b></p></small>
+		  <small><p style="color: gray; margin-top: 40px"><b>API</b></p></small>
 		  <div class="r-hstack">
 		    <img src="https://raw.githubusercontent.com/fortran-lang/fortran-lang.org/refs/heads/master/assets/img/fortran-logo.svg"
 			 style="width: 30%; margin: 4px" alt="Fortran">
@@ -173,7 +173,7 @@
 			 style="width: 30%; margin: 4px" alt="C++">
 		  </div>
 		  <div class="r-fit-text"
-		       style="margin-top: -20px">
+		       style="margin-top: -10px">
 		    <p>MATLAB&reg; Java&trade;</p>
 		  </div>
 		  <small><p style="color: gray"><b>I/O</b></p></small>
@@ -185,16 +185,16 @@
 			 style="width: 50%; margin: 4px" alt="MDSplus">
 		  </div>
 		  <div class="r-hstack">
-		    <div style="width: 33%">
-		      <a href="https://github.com/ukaea/UDA">
-			<img class="r-frame"
-			     src="https://raw.githubusercontent.com/ukaea/UDA/refs/heads/main/docs/assets/logos/uda.svg"
-			     alt="UDA">
-		      </a>
-		    </div>
+		    <a href="https://github.com/ukaea/UDA">
+		      <img class="r-frame"
+			   src="https://raw.githubusercontent.com/ukaea/UDA/refs/heads/main/docs/assets/logos/uda.svg"
+			   style="width: 70px; margin: 4px"
+			   alt="UDA">
+		    </a>
+	    	    <!--<div style="width: 50%"></div>
 		    <img src="https://www.unidata.ucar.edu/images/logos/netcdf-400x400.png"
-			 style="width: 33%; margin: 2px" alt="netCDF">
-		    <div style="witdh: 33%">
+			 style="width: 33%; margin: 2px" alt="netCDF">-->
+		    <div style="witdh: 50%">
 		      <small>ASCII</small>
 		    </div>
 		  </div>
@@ -205,114 +205,115 @@
 		  </div>
 		</div>
 	      </div>
-	      <div class="fragment fade-up"
-		   data-fragment-index="2"
-		   data-id="visu"
-		   style="background: white; color: black; width: 250px; height: 600px; margin: 5px; border-radius: 5px;">
-		visualisation
-		<div class="r-vstack">
-		  <img src="img/plotscenario-dina-jintrac.png">
-		  <img src="img/viz-browser.png">
- 		  <img src="img/ggd-vtk-jorek.png">
-		</div>
-	      </div>
-	      <div class="fragment fade-up"
-		   data-fragment-index="3"
-		   data-id="workflow"
-		   style="background: white; color: black; width: 250px; height: 600px; margin: 5px; border-radius: 5px;">
-		workflows
-		<div class="r-vstack">
-		  <div class="r-stack">
-		    <img src="img/iwrap-gui.png">
-		    <img src="https://docs.dask.org/en/stable/_images/dask_horizontal.svg"
-			 style="width: 50%; opacity: 50%">
-		  </div>
-		  <div class="r-stack">
-		    <img src="img/coupling-patterns.png">
- 		    <a href="https://github.com/multiscale/muscle3">
-		      <img class="r-frame"
-			   src="https://raw.githubusercontent.com/multiscale/muscle3/develop/docs/source/muscle3_logo_readme.png"
-			   style="width: 75%; opacity: 60%"
-			   alt="MUSCLE3">
-		    </a>
+	      <div class="r-vstack">
+		<div class="fragment fade-up"
+		     data-fragment-index="2"
+		     data-id="visu"
+		     style="background: white; color: black; width: 800px; height: 200px; margin: 2px; border-radius: 5px;">
+		  <small><b>visualisation</b></small><br>
+		  <div class="r-hstack">
+		    <img src="img/idstools-scenario.jpg"
+			 style="margin: 4px; margin-top: -10px; height: 180px">
+		    <img src="img/viz-browser.png"
+			 style="margin: 4px; height: 170px">
+		    <img src="img/ggd-vtk-jorek.png"
+			 style="margin: 4px; margin-top: -5px; height: 170px">
 		  </div>
 		</div>
-	      </div>
+		<div class="fragment fade-up"
+		     data-fragment-index="3"
+		     data-id="workflow"
+		     style="background: white; color: black; width: 800px; height: 200px; margin: 2px; border-radius: 5px;">
+		  <div class="r-hstack">
+		    <small><b>workflows</b></small></br>
+		    <div class="r-stack">
+		      <img src="img/iwrap-gui.png"
+			   style="height: 195px; margin: 4px">
+		      <img src="https://docs.dask.org/en/stable/_images/dask_horizontal.svg"
+			   style="width: 100px; opacity: 50%">
+		    </div>
+		    <div class="r-stack">
+		      <img src="img/coupling-patterns.png"
+			   style="height: 190px; margin: 4px">
+ 		      <a href="https://github.com/multiscale/muscle3">
+			<img class="r-frame"
+			     src="https://raw.githubusercontent.com/multiscale/muscle3/develop/docs/source/muscle3_logo_readme.png"
+			     style="width: 200px; opacity: 60%"
+			     alt="MUSCLE3">
+		      </a>
+		    </div>
+		  </div>
+		</div>
 	      <div class="fragment fade-up"
 	   	   data-fragment-index="5"
 		   data-id="simdb"
-		   style="background: white; color: black; width: 250px; height: 600px; margin: 5px; border-radius: 5px;">
-		databases
-		<div class="r-vstack">
-		  <img src="img/simdb-architecture.png">
-		  <img src="img/simdb-query.png">
+		   style="background: white; color: black; width: 800px; height: 200px; margin: 2px; border-radius: 5px;">
+		<div class="r-hstack">
+		  <small><b>databases</span></b></small></br>
+		  <!--<img src="img/simdb-architecture.png"
+		       style="height: 165px; margin: 4px; margin-top: -30px">-->
+		  <img src="img/simdb-query.png"
+		       style="height: 195px; margin: 4px; margin-top: -5px">
 		  <img src="img/simdb-compare.png"
+		       style="height: 195px; margin: 4px; margin-top: -5px">
 		</div>
 	      </div>
 	    </div>
 	  </section>
-	
+
 	  <section>
 	    <h3>Applications</h3>
 	    <div class="r-hstack">
 	      <div class="r-vstack">
-		<div class="fragment"
-		     data-fragment-index="3"
-		     style="background: white; width: 200px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/solps-iter.png"
-		       style="height: 170px">
-		</div>
-		<div class="fragment"
+		<div class="fragment fade-up"
 		     data-fragment-index="1"
-		     style="background: white; width: 200px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/hcd-workflow.png"
-		       style="height: 180px">
+		     style="background: white; color: black; width: 450px; height: 280px; margin: 2px; border-radius: 5px;">
+		  <small><b>Energetic particles</b></small>
+		  <div class="r-vstack">
+		    <img src="img/apps/epcom.png"
+			 style="height: 120px; margin: 3px; margin-top: 0px">
+		    <img src="img/apps/ep-workflow.png"
+			 style="height: 120px; margin: 3px; margin-top: 0px">
+		  </div>
 		</div>
-		<div class="fragment"
+		<div class="fragment fade-up"
 		     data-fragment-index="4"
-		     style="background: white; width: 200px; height: 180px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/nova-rapid-design.png"
-		       style="height: 180px">
+		     style="background: white; color: black; width: 450px; height: 320px; margin: 2px; border-radius: 5px;">
+		  <small><b>Synthetic diagnostics</b></small>
+		  <div class="r-hstack">
+		    <img src="img/apps/minerva-synth-diag.png"
+			 style="height: 300px; margin: 3px; margin-top: -5px">
+		  </div>
 		</div>
 	      </div>
 	      <div class="r-vstack">
-		<div class="fragment"
+		<div class="fragment fade-up"
 		     data-fragment-index="2"
-		     style="background: white; width: 400px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/ep-workflow.png"
-		       style="height: 190px">
+		     style="background: white; color: black; width: 550px; height: 280px; margin: 2px; border-radius: 5px;">
+		  <small><b>SOL and PWI</b></small>
+		  <div class="r-hstack">
+		    <img src="img/apps/solps-iter.png"
+			 style="height: 240px; margin: 3px">
+		    <img src="img/apps/smiter.png"
+			 style="height: 240px; margin: 3px">
+		    <!--<img src="img/apps/radiation-heat-load-wf.png"
+			 style="height: 210px; margin: 3px">-->
+		  </div>
 		</div>
-		<div class="fragment"
-		     data-fragment-index="1"
-		     style="background: white; width: 400px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/dina-jintrac-core-edge.png"
-		       style="height: 190px">
-		</div>
-		<div class="fragment"
-		     data-fragment-index="2"
-		     style="background: white; width: 400px; height: 180px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/epcom.png"
-		       style="height: 200px">
-		</div>
-	      </div>
-	      <div class="r-vstack">
-		<div class="fragment"
-		     data-fragment-index="1"
-		     style="background: white; width: 300px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/jintrac-dina-workflow.png"
-		       style="height: 170px">
-		</div>
-		<div class="fragment"
+		<div class="fragment fade-up"
 		     data-fragment-index="3"
-		     style="background: white; width: 300px; height: 200px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/smiter.png"
-		       style="height: 170px">
-		</div>
-		<div class="fragment"
-		     data-fragment-index="3"
-		     style="background: white; width: 300px; height: 180px; margin: 5px; border-radius: 5px;">
-		  <img src="img/apps/radiation-heat-load-wf.png"
-		       style="height: 170px">
+		     style="background: white; color: black; width: 550px; height: 320px; margin: 2px; border-radius: 5px;">
+		  <small><b>High-fidelity plasma simulator</b></small>
+		  <div class="r-vstack">
+		    <img src="img/apps/dina-jintrac-core-edge.png"
+			 style="height: 160px; margin: 3px; margin-top: 0px">
+		    <div class="r-hstack">
+		      <img src="img/apps/hcd-workflow.png"
+			   style="height: 110px; margin: 3px; margin-top: 0px">
+		      <img src="img/apps/hcd-results.jpg"
+			   style="height: 130px; margin: 3px; margin-top: -5px">
+		    </div>
+		  </div>
 		</div>
 	      </div>
 	    </div>
@@ -330,7 +331,7 @@
 
 	  <section>
 	    <h3>A long journey</h3>
-	    <div style="float: left; margin-left: -50px; margin-top: 20px; font-size: 24px">
+	    <div style="float: left; margin-left: -50px; margin-top: 20px; font-size: 28px">
 	      <ul>
 		<li>
 		  <b>2006</b>: ITER agreement</li>
@@ -490,39 +491,57 @@
 		 style="font-size: 24px;">
 	      <div class="fragment fade-up"
 		   data-fragment-index="1"
-		   style="background: white; color: black; width: 90%; height: 30%; margin: 5px; border-radius: 5px;">
-		<b>IDS-Validator</b>
-		<ul>
-		  <li>Python tool to perform <span style="color: blue">validation checks</span> on IDS values</li>
-		  <li>Validation rulesets are made of decorated Python functions
-		  <li>Rules can be generic or use-case specific (a given tokamak, code)</li>
-		</ul>
+		   style="background: white; color: black; width: 900px; height: 200px; margin: 2px; border-radius: 5px;">
+		<div class="r-hstack">
+		  <div>
+		    <img src="img/ids-validator.png"
+			 style="width: 360px; margin-top: 30px; margin-left: 20px">
+		  </div>
+		  <div>
+		    <b>IDS-Validator</b>
+		    <ul>
+		      <li>Python CLI tool for checking <span style="color: blue">validation rulesets</span> on IDS values</li>
+		      <li>Rules implemented as functions with decorators
+		      <li>Generic or use-case specific rules (tokamak, code)</li>
+		    </ul>
+		  </div>
+		</div>
 	      </div>
 	      <div class="fragment fade-up"
 		   data-fragment-index="2"
-		   style="background: white; color: black; width: 90%; height: 30%; margin: 5px; border-radius: 5px;">
-		<b>GGD-VTK plugin</b>
-		<ul>
-		  <li><a href="https://www.paraview.org/">ParaView</a> plugin to <span style="color: blue">visualise grids/meshes</span> stored as GGD<sup><a href="#/links">2</a></sup> in IDS</li>
-		  <li>More readers for 1D/2D profiles, beams, lines of sight...</li>
-		  <li>Access to data via <a href="#/imas-python">imas-python</a></li>
-		</ul>
-		<!--<div class="r-stack">
-		    <img class="fragment fade-out" src="img/ggd-vtk-2d-reader.png" width="130px"
-			 data-fragment-index="3">
-		    <img class="fragment fade-in" src="img/ggd-vtk-beams.png" width="130px"
-			 data-fragment-index="3">
-		</div>-->
+		   style="background: white; color: black; width: 900px; height: 200px; margin: 2px; border-radius: 5px;">
+		<div class="r-hstack">
+		  <div>
+		    <b>GGD-VTK plugin</b>
+		    <ul>
+		      <li><a href="https://www.paraview.org/">ParaView</a> plugin to <span style="color: blue">visualise meshes</span> stored as GGD<sup><a href="#/links">2</a></sup> in IDS</li>
+		      <li>More readers: 1D/2D profiles, beams, lines of sight...</li>
+		      <li>Access to data via <a href="#/imas-python">imas-python</a></li>
+		    </ul>
+		  </div>
+		  <div>
+		    <img src="img/ggd-vtk-jorek-iso.png"
+			 style="width: 300px; margin-top: 5px">
+		  </div>
+		</div>
 	      </div>
 	      <div class="fragment fade-up"
 		   data-fragment-index="4"
-		   style="background: white; color: black; width: 90%; height: 30%; margin: 5px; border-radius: 5px;">
-		<b>SimDB + Dashboard</b>
-		  <ul>
-		    <li>Tools to build, share and explore <span style="color: blue">databases of IMAS simulations</span></li>
-		    <li>CLI client, remote server, REST API</li>
-		    <li>Web dashboard allows to query/compare simulations</li>
-		  </ul>
+		   style="background: white; color: black; width: 900px; height: 200px; margin: 2px; border-radius: 5px;">
+		<div class="r-hstack">
+		  <div>
+		    <img src="img/simdb-architecture.png"
+			 style="width: 400px; margin-top: 30px; margin-left: 10px">
+		  </div>
+		  <div>
+		    <b>SimDB + Dashboard</b>
+		    <ul>
+		      <li>Tools to build, share and explore <span style="color: blue">databases of IMAS simulations</span></li>
+		      <li>CLI client, remote server, REST API</li>
+		      <li>Web dashboard to query & compare simulations</li>
+		    </ul>
+		  </div>
+		</div>
 	      </div>
 	    </div>
 	  </section>
@@ -589,7 +608,7 @@
 		  <td><a href="https://easybuild.io/">EasyBuild</a></td>
 		</tr>
 		<tr>
-		  <td>integrate with other software</td>
+		  <td>synergies with development of other software</td>
 		  <td><a href="https://github.com/ukaea/UDA">UDA</a></td>
 		</tr>
 	      </tbody>
@@ -691,58 +710,88 @@
 	  <section>
 	    <h3>Limitations and perspectives</h3>
 	    <h5 class="r-fit-text">Towards a data standard for the fusion community</h5>
-	    <div class="r-stack">
-	      <ul style="font-size: 28px">
+	    <div class="r-hstack">
+	      <ul style="font-size: 28px;">
 		<li class="fragment"
-		    data-fragment-index="1">Little use on stellarators (some IDS lean towards tokamaks)</li>
+		    data-fragment-index="1"><span style="color: red">Large, complex, evolving</span> model (nesting)<br>
+		  &rarr; simplify with <span style="color: Lime">standard geometry, grids</span></li>
 		<li class="fragment"
-		    data-fragment-index="2">Mapping experimental data requires resources &rarr; improve sharing of information (documentation, recipes, common mapping syntax)</li>
+		    data-fragment-index="2"><span style="color: red">Mixing data model & interfaces</span><br>
+		  &rarr; <span style="color: Lime">separate interfaces</span> for flexibity</li>
 		<li class="fragment"
-		    data-fragment-index="3">The data model is too complex &rarr; needs trimming (but backward compatibility remains fundamental)</li>
+		    data-fragment-index="3"><span style="color: red">Non-backward compatible changes</span><br>
+		  &rarr; <span style="color: Lime">exceptional for active IDS</span>, mitigated?</li>
 		<li class="fragment"
-		    data-fragment-index="4">Overlap data model/interfaces &rarr; separation for improved flexibity</li>
+		    data-fragment-index="4">Some <span style="color: red">IDS lean towards tokamaks</span><br>
+		  &rarr; more <span style="color: Lime">involvement from stellarators</span></li>
 		<li class="fragment"
-		    data-fragment-index="5">Initial focus on data providers &rarr; change now towards data consumers</li>
+		    data-fragment-index="5">Initial <span style="color: red">focus on data producers</span><br>
+		  &rarr; <span style="color: Lime">balance with consumers</span> needs</li>
 	      </ul>
+	      <div class="fragment" data-fragment-index="1">
+		<video controls src="img/dd-evo.mp4" width="350px"></video>
+	      </div>
 	    </div>
 	  </section>
-
 	</section>
 
 
 	<section>
 	  <h2>Summary</h2>
-	  <span style="font-size: 32px">
-	    <ul>
-	      <li class="fragment"
-		  data-fragment-index="1">GIP software at IO can now be made open source</li>
-	      <li class="fragment"
-		  data-fragment-index="1"><a href="#/imas-dd">IMAS-Data-Dictionary</a>, <a href="#/imas-python">IMAS-Python</a> and <a href="#/pcssp">PCSSP</a> are open access</li>
-	      <li class="fragment"
-		  data-fragment-index="1">Software with BIP &rarr; IO asked owners for open licenses</li>
-	      <li class="fragment"
-		  data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
-	      <li class="fragment"
-		  data-fragment-index="3">Our hope: reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
-	      <li class="fragment"
-		  data-fragment-index="4">Facilitate engagement from persons outside fusion</li>
-	    </ul>
-	  </span>
+	  <ul style="font-size: 32px">
+	    <li class="fragment"
+		data-fragment-index="1">GIP software at IO can now be made open source</li>
+	    <li class="fragment"
+		data-fragment-index="1"><a href="#/imas-dd">IMAS-Data-Dictionary</a>, <a href="#/imas-python">IMAS-Python</a>, <a href="#/pcssp">PCSSP</a> open access</li>
+	    <li class="fragment"
+		data-fragment-index="1">Software with BIP &rarr; IO asked owners for open licenses</li>
+	    <li class="fragment"
+		data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
+	    <li class="fragment"
+		data-fragment-index="3">Our hope: reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
+	    <li class="fragment"
+		data-fragment-index="4">Facilitate engagement from people outside fusion (AI/ML)</li>
+	  </ul>
 	</section>
 	  
 	<section id="links">
 	  <h4>Links and bibliography</h4>
-	  <small>
-	    <ol>
-	      <li><em><a href="https://iopscience.iop.org/article/10.1088/0029-5515/55/12/123006">F. Imbeaux et al 2015 Nucl. Fusion 55 123006</a></em></li>
-	      <li><em><a href="https://hal.science/hal-03117771v1">L. Fleury et al 2020 SOFT Conference</a></em></li>
-	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/ac34d8">M. Schneider et al 2021 Nucl. Fusion 61 126058</a></em></li>
-	      <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/acf056">V.-A. Popa et al 2023 Nucl. Fusion 63 126008</a></em></li>
-	      <li><em><a href="https://imas-data-dictionary.readthedocs.io/en/latest/ggd_guide/doc.html">GGD: the Generalized Grid Description</a></em></li>
-	      <li><em><a href="https://github.com/ukaea/IMAS_MASTU_mappings">MAST-U data mappings</a></em></li>
-	      <li><em><a href="https://github.com/ukaea/IMAS_JET_mappings">JET data mappings</a></em></li>
-	    </ol>
-	  </small>
+	  <ol style="font-size: 24px">
+	    <li><em><a href="https://iopscience.iop.org/article/10.1088/0029-5515/55/12/123006">F. Imbeaux et al 2015 Nucl. Fusion 55 123006</a></em></li>
+	    <li><em><a href="https://hal.science/hal-03117771v1">L. Fleury et al 2020 SOFT Conference</a></em></li>
+	    <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/ac34d8">M. Schneider et al 2021 Nucl. Fusion 61 126058</a></em></li>
+	    <li><em><a href="https://iopscience.iop.org/article/10.1088/1741-4326/acf056">V.-A. Popa et al 2023 Nucl. Fusion 63 126008</a></em></li>
+	    <li><em><a href="https://imas-data-dictionary.readthedocs.io/en/latest/ggd_guide/doc.html">GGD: the Generalized Grid Description</a></em></li>
+	    <li><em><a href="https://github.com/ukaea/IMAS_MASTU_mappings">MAST-U data mappings</a></em></li>
+	    <li><em><a href="https://github.com/ukaea/IMAS_JET_mappings">JET data mappings</a></em></li>
+	  </ol>
+	  <div class="r-hstack"
+	       style="margin-top: 20px">
+	    <div class="r-vstack">
+	      <a href="https://github.com/iterorganization">
+		<img class="r-frame" src="img/QR-github-iterorganization.svg" style="width: 150px; margin: 10px">
+	      </a>	
+	      <span style="font-size: 14px">iterorganization</span>
+	    </div>
+	    <div class="r-vstack">
+	      <a href="https://github.com/imas-data-dictionary">
+		<img class="r-frame" src="img/QR-imas-data-dictionary.svg" style="width: 150px; margin: 10px">
+	      </a>	
+	      <span style="font-size: 14px">imas-data-dictionary</span>
+	    </div>
+	    <div class="r-vstack">
+	      <a href="https://github.com/imas-python">
+		<img class="r-frame" src="img/QR-imas-python.svg" style="width: 150px; margin: 10px">
+	      </a>	
+	      <span style="font-size: 14px">imas-python</span>
+	    </div>
+	    <div class="r-vstack">
+	      <a href="https://github.com/pcssp">
+		<img class="r-frame" src="img/QR-pcssp.svg" style="width: 150px; margin: 10px">
+	      </a>	
+	      <span style="font-size: 14px">pcssp</span>
+	    </div>
+	  </div>
 	</section>
 	
       </div>
