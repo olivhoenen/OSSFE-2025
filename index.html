@@ -25,9 +25,9 @@
 	<section>
 	  <h2>Outline</h2>
 	  <ul>
-	    <li>Introduction to IMAS</li>
-	    <li>Open sourcing at ITER</li>
-	    <li>Challenges and opportunities</li>
+	    <li><a href="#/imas">Introduction to IMAS</a></li>
+	    <li><a href="#/open-imas">Open sourcing at ITER</a></li>
+	    <li><a href="#/discussion">Challenges and opportunities</a></li>
 	  </ul>
 	</section>
 
@@ -35,7 +35,8 @@
 	
 	<!-- Introduction and reminders about IMAS -->
 	<section>
-	  <section data-background-image="img/logo/imas.svg"
+	  <section id="imas"
+		   data-background-image="img/logo/imas.svg"
 		   data-background-opacity="0.3">
 	    <h2>Introduction to IMAS</h2>
 	  </section>
@@ -268,7 +269,7 @@
 	    <div class="r-hstack">
 	      <div class="r-vstack">
 		<div class="fragment fade-up"
-		     data-fragment-index="1"
+		     data-fragment-index="3"
 		     style="background: white; color: black; width: 440px; height: 280px; margin: 2px; border-radius: 5px;">
 		  <small><b>Energetic particles</b></small>
 		  <div class="r-vstack">
@@ -301,7 +302,7 @@
 		  </div>
 		</div>
 		<div class="fragment fade-up"
-		     data-fragment-index="3"
+		     data-fragment-index="1"
 		     style="background: white; color: black; width: 540px; height: 320px; margin: 2px; border-radius: 5px;">
 		  <small><b>High-fidelity plasma simulator</b></small>
 		  <div class="r-vstack">
@@ -324,7 +325,8 @@
 	
 	<!-- Open sourcing status and plans -->
 	<section>
-	  <section data-background-image="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGpsaGV1YnpuYXc3eW5qaGV6aW8wYWhram1qbWVvMzE5ZGZ0dGtzYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XB3gaBJjllUtBnX8wS/giphy.gif"
+	  <section id="open-imas"
+		   data-background-image="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGpsaGV1YnpuYXc3eW5qaGV6aW8wYWhram1qbWVvMzE5ZGZ0dGtzYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XB3gaBJjllUtBnX8wS/giphy.gif"
 		   data-background-opacity="0.3">
 	    <h2>Open sourcing IMAS</h2>
 	  </section>
@@ -447,7 +449,7 @@
 	      </div>
 	      <div style="width: 55%; margin-right: -40px">
 		<pre>
-		  <code data-trim class="language-python" data-line-numbers="1-7|9-12|14-17|19-22">
+		  <code data-trim class="language-python" data-line-numbers="1-12|14-22">
 		    # create and explore IDS
 		    import imas
 		    from imas.util import inspect
@@ -556,7 +558,8 @@
 
 	<!-- Perspectives and challenges -->
 	<section>
-	  <section data-background-image="img/discussions.png"
+	  <section id="discussion"
+		   data-background-image="img/discussions.png"
 		   data-background-opacity="0.15">
 	    <h2>Challenges and opportunities</h2>
 	  </section>
@@ -620,22 +623,19 @@
 	  <section>
 	    <h3>Adapting a code to IMAS</h3>
 	    <dl>
-	      <dt class="fragment"
-		  data-fragment-index="1"><b>Why?</b></dt>
+	      <dt><b>Why?</b></dt>
 	      <dd>
-		<ul class="fragment"
-		    data-fragment-index="1"
-		    style="font-size: 32px">
+		<ul style="font-size: 32px">
 		  <li>code shall run within ITER suite</li>
 		  <li>benchmarking exercise with similar codes</li>
 		  <li>standardize machine description</li>
 		</ul>
 	      </dd>
 	      <dt class="fragment"
-		  data-fragment-index="2"><b>How?</b></dt>
+		  data-fragment-index="1"><b>How?</b></dt>
 	      <dd>
 		<ul class="fragment"
-		    data-fragment-index="2"
+		    data-fragment-index="1"
 		    style="font-size: 32px">
 		  <li>I/O data must be defined by following the IMAS DD</li>
 		  <li>non-intrusive adaptation with a <em>wrapper</em></li>
@@ -643,10 +643,10 @@
 		</ul>
 	      </dd>
 	      <dt class="fragment"
-		  data-fragment-index="3"><b>License</b></dt>
+		  data-fragment-index="2"><b>License</b></dt>
 	      <dd>
 		<ul class="fragment"
-		    data-fragment-index="3"
+		    data-fragment-index="2"
 		    style="font-size: 32px">
 		  <li>always add <b>a</b> license for your source code</li>
 		  <li>consider open licenses and open repositories</li>
@@ -658,22 +658,19 @@
 	  <section>
 	    <h3>Mapping existing data in IMAS</h3>
 	    <dl>
-	      <dt class="fragment"
-		  data-fragment-index="1"><b>Motivations</b></dt>
+	      <dt><b>Motivations</b></dt>
 	      <dd>
-		<ul class="fragment"
-		    data-fragment-index="1"
-		    style="font-size: 32px">
+		<ul style="font-size: 32px">
 		  <li>prepare ITER operation: validate tools, training</li>
 		  <li>prepare more ambitious multi-machines databases</li>
 		  <li>use available IMAS application to improve modelling capability in given areas</li>
 		</ul>
 	      </dd>
 	      <dt class="fragment"
-		  data-fragment-index="2"><b>Caveats</b></dt>
+		  data-fragment-index="1"><b>Caveats</b></dt>
 	      <dd>
 		<ul class="fragment"
-		    data-fragment-index="2"
+		    data-fragment-index="1"
 		    style="font-size: 32px">
 		  <li>involve a large effort from experts (sparse resources)</li>
 		  <li>non-backward compatible changes in IMAS DD</li>
@@ -681,10 +678,10 @@
 		</ul>
 	      </dd>
 	      <dt class="fragment"
-		  data-fragment-index="2"><b>Mitigations</b></dt>
+		  data-fragment-index="1"><b>Mitigations</b></dt>
 	      <dd>
 		<ul class="fragment"
-		    data-fragment-index="2"
+		    data-fragment-index="1"
 		    style="font-size: 32px">
 		  <li>targetted effort, identify success stories</li>
 		  <li>share mappings and experience on open platforms<sup><a href="#/links">6,7</a></sup></li>
@@ -715,20 +712,20 @@
 	    <div class="r-hstack">
 	      <ul style="font-size: 28px;">
 		<li class="fragment"
-		    data-fragment-index="1"><span style="color: red">Large, complex, evolving</span> model (nesting)<br>
+		    data-fragment-index="1">Large, complex, evolving model (nesting)<br>
 		  &rarr; simplify with <span style="color: Lime">standard geometry, grids</span></li>
 		<li class="fragment"
-		    data-fragment-index="1"><span style="color: red">Mixing data model & interfaces</span><br>
+		    data-fragment-index="1">Mixing data model & IDS<br>
 		  &rarr; <span style="color: Lime">separate interfaces</span> for flexibity</li>
 		<li class="fragment"
-		    data-fragment-index="1"><span style="color: red">Non-backward compatible changes</span><br>
-		  &rarr; <span style="color: Lime">exceptional for active IDS</span>, mitigated?</li>
+		    data-fragment-index="1">Non-backward compatible changes<br>
+		  &rarr; exceptional for <span style="color: Lime">active IDS</span>, mitigated?</li>
 		<li class="fragment"
-		    data-fragment-index="2">Some <span style="color: red">IDS lean towards tokamaks</span><br>
-		  &rarr; more <span style="color: Lime">involvement from stellarators</span></li>
+		    data-fragment-index="2">Some IDS lean towards tokamaks</span><br>
+		  &rarr; more involvement from <span style="color: Lime">stellarators</span></li>
 		<li class="fragment"
-		    data-fragment-index="2">Initial <span style="color: red">focus on data producers</span><br>
-		  &rarr; <span style="color: Lime">balance with consumers</span> needs</li>
+		    data-fragment-index="2">Initial focus on data producers<br>
+		  &rarr; balance with <span style="color: Lime">consumers</span> needs</li>
 	      </ul>
 	      <div class="fragment" data-fragment-index="1">
 		<video controls src="img/dd-evo.mp4" width="350px"></video>
