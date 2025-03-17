@@ -42,10 +42,10 @@
 
 	  <section>
 	    <h3>What is IMAS?</h3>
-	    <blockquote class="fragment">
+	    <blockquote>
 	      <small>The <span style="color:orange">Integrated Modelling & Analysis Suite</span> is the collection of physics software that will be used to support <span style="color:orange">ITER</span> <u>operations and research</u> as defined in the ITER Integrated Modelling Programme...</small>
 	    </blockquote>
-	    <blockquote class="fragment">
+	    <blockquote>
 	      <small>... it comprises <span style="color:orange">plasma modelling tools</span> for systematic <u>planning</u> (evaluate candidate plasma operating scenarios and assist in the development of plasma control strategies) and <u>analysis</u> of each ITER discharge.</small>
 	    </blockquote>
 	  </section>
@@ -56,61 +56,46 @@
 		<li class="fragment" data-fragment-index="2"><b>2003</b>: the Integrated Tokamak Modelling (ITM) starts discussing <span style="color: Lime">common data ontology</span> in EU</li>
 		<li class="fragment" data-fragment-index="1"><b>2011</b>: start of IMAS design and development at the ITER Organization (IO), building upon ITM concepts</li>
 		<li class="fragment" data-fragment-index="3"><b>2015</b>: first IMAS <em>prototype</em> published <sup><a href="#/links">1</a></sup> (version controlled ontology: 3.2.0, 30 classes)</li>
-		<li class="fragment" data-fragment-index="4"><b>2017</b>: WEST tokamak uses IMAS in production for its plasma reconstruction chain <sup><a href="#/links">2</a></sup></li>
-		<li class="fragment" data-fragment-index="5"><b>2021</b>: Heating and current drive workflow in IMAS <sup><a href="#/links">3</a></sup></li>
-		<li class="fragment" data-fragment-index="6"><b>2023</b>: IMAS workflow for energetic particle stability <sup><a href="#/links">4</a></sup></li>
-		<li class="fragment" data-fragment-index="7"><b>2024</b>: end of version 3 development (3.42.0, 81 classes), introducing version 4</li>
+		<li class="fragment" data-fragment-index="3"><b>2017</b>: WEST tokamak uses IMAS in production for its plasma reconstruction chain <sup><a href="#/links">2</a></sup></li>
+		<li class="fragment" data-fragment-index="4"><b>2021</b>: Heating and current drive workflow in IMAS <sup><a href="#/links">3</a></sup></li>
+		<li class="fragment" data-fragment-index="4"><b>2023</b>: IMAS workflow for energetic particle stability <sup><a href="#/links">4</a></sup></li>
+		<li class="fragment" data-fragment-index="5"><b>2024</b>: end of version 3 development (3.42.0, 81 classes), introducing version 4</li>
 	      </ul>
 	  </section>
 
-	  <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.77, 0.00, 0.17, 0.99)">
-	    <h3>IMAS software stack</h3>
-	    <div class="r-stack">
-	      <div data-id="box3" style="background: RoyalBlue; color: black; width: 380px; height: 320px; border-radius: 5px;">
-		<b>Applications</b>
-	      </div>
-	      <div data-id="box2" style="background: SkyBlue; color: black; width: 280px; height: 220px; border-radius: 5px;">
-		<b>Generic tools</b>
-	      </div>
-	      <div data-id="box1" style="background: white; color: black; width: 180px; height: 120px; border-radius: 5px;">
-		<b>Data model</b>
-	      </div>
-	    </div>
-	  </section>	  
-	  <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.19, 0.09, 0.31, 0.99)"
-		   data-visibility="uncounted">
+	  <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.19, 0.09, 0.31, 0.99)">
 	    <h3>IMAS software stack</h3>
 	    <div class="r-vstack">
-	      <div data-id="box3"
-		   data-auto-animate-delay="0."
+	      <div class="fragment" data-fragment-index="3"
+		   data-id="box3"
 		   style="background: RoyalBlue; color: black; width: 900px; height: 100px; margin: 10px; border-radius: 5px;">
 		<b>Applications</b>
 		<small>
-		  <ul class="fragment" data-fragment-index="3">
+		  <ul>
 		    <li>Standalone physics codes</li>
 		    <li>Data processing pipelines or workflows</li>
 		    <li>Multi-machines databases</li>
 		  </ul>
 		</small>
 	      </div>
-	      <div data-id="box2"
-		   data-auto-animate-delay="0.2"
+	      <div class="fragment" data-fragment-index="2"
+		   data-id="box2"
 		   style="background: SkyBlue; color: black; width: 900px; height: 100px; margin: 10px; border-radius: 5px;">
 		<b>Generic tools</b>
 		<small>
-		  <ul class="fragment" data-fragment-index="2">
+		  <ul>
 		    <li>Data access, storage and manipulation</li>
 		    <li>Data visualisation</li>
 		    <li>Simulations execution and management</li>
 		  </ul>
 		</small>
 	      </div>
-	      <div data-id="box1"
-		   data-auto-animate-delay="0.4"
+	      <div class="fragment" data-fragment-index="1"
+		   data-id="box1"
 		   style="background: white; color: black; width: 900px; height: 100px; margin: 10px; border-radius: 5px;">
 		<b>Data model</b>
 		<small>
-		  <ul class="fragment" data-fragment-index="1">
+		  <ul>
 		    <li>Machine independent data structures</li>
 		    <li>Can be used for code coupling</li>
 		    <li>Metadata and provenance</li>
@@ -119,7 +104,28 @@
 	      </div>
 	    </div>
 	  </section>
-	  
+	  <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.77, 0.00, 0.17, 0.99)"
+		   data-visibility="uncounted">
+	    <h3>IMAS software stack</h3>
+	    <div class="r-stack">
+	      <div data-id="box3"
+		   data-auto-animate-delay="0."
+		   style="background: RoyalBlue; color: black; width: 380px; height: 320px; border-radius: 5px;">
+		<b>Applications</b>
+	      </div>
+	      <div data-id="box2"
+		   data-auto-animate-delay="0.1"
+		   style="background: SkyBlue; color: black; width: 280px; height: 220px; border-radius: 5px;">
+		<b>Generic tools</b>
+	      </div>
+	      <div data-id="box1"
+		   data-auto-animate-delay="0.2"
+		   style="background: white; color: black; width: 180px; height: 120px; border-radius: 5px;">
+		<b>Data model</b>
+	      </div>
+	    </div>
+	  </section>	  
+	  	  
 	  <section>
 	    <h3>Data model</h3>
 	    <ul style="font-size: 34px">
@@ -147,7 +153,7 @@
 	    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 	      <h3>Data dictionary</h3>
 	      <ul>
-		<li>Describes the hierarchical structures in XSD</li>
+		<li>Describes the hierarchical structures in XSD/XML</li>
 		<li>Has strict rules for modifications (<em>active</em> vs <em>alpha</em> IDS)</li>
 		<li>Changes driven by the community via ITER JIRA trackers</li>
 	      </ul>
@@ -176,7 +182,7 @@
 		       style="margin-top: -10px">
 		    <p>MATLAB&reg; Java&trade;</p>
 		  </div>
-		  <small><p style="color: gray"><b>I/O</b></p></small>
+		  <small><p style="color: gray"><b>I/O<br>imas-core</b></p></small>
 		  <div class="r-hstack"
 		       style="margin-top: -20px">
 		    <img src="https://support.hdfgroup.org/assets/img/hdf5.jpeg"
@@ -338,16 +344,16 @@
 		    data-fragment-index="3">
 		  <b>2019</b>: software license discussions</li>
 		<li class="fragment"
-		    data-fragment-index="4">
+		    data-fragment-index="3">
 		  <b>2022</b>: modified BSD license,<br>
 		  access via cooperation agreement</li>
 		<li class="fragment"
-		    data-fragment-index="6">
+		    data-fragment-index="4">
 		  <b>2024</b>: fusion private sector workshop,<br>
 		  listing software IO generated IP,<br>
 		  approved <span style="color: Lime">open sourcing GIP codes</span></li>
 		<li class="fragment"
-		    data-fragment-index="7">
+		    data-fragment-index="4">
 		  <b>2025</b>: move first repositories to GitHub</li>
 	      </ul>
 	    </div>
@@ -364,16 +370,21 @@
 		   data-fragment-index="2"
 		   src="img/bitbucket.png"
 		   style="width: 420px">	      
-	      <img class="fragment fade-in-then-out"
-		   data-fragment-index="4"
-		   src="img/modified-bsd-3-license.png"
-		   style="width: 420px">
-	      <img class="fragment fade-in-then-out"
-		   data-fragment-index="5"
-		   src="img/imas-ca-2024.png"
-		   style="width: 420px">
+	      <div class="fragment fade-in-then-out"
+		   data-fragment-index="3">
+		<div class="r-vstack">
+		  <!--<img class="fragment fade-in-then-out"
+		       data-fragment-index="4"-->
+		  <img src="img/modified-bsd-3-license.png"
+		       style="width: 420px">
+		  <!--<img class="fragment fade-in-then-out"
+		       data-fragment-index="5"-->
+		  <img src="img/imas-ca-2024.png"
+		       style="width: 420px">
+		</div>
+	      </div>
 	      <div class="fragment"
-		   data-fragment-index="7">
+		   data-fragment-index="4">
 		<span style="font-size: 16px">https://github.com/iterorganization</span>
 		<a href="https://github.com/iterorganization">
 		  <img class="r-frame" src="img/QR-github-iterorganization.svg" style="margin-top: 0px; width: 250px">
@@ -421,9 +432,9 @@
 		</div>
 		<ul style="font-size: 24px">
 		  <li class="fragment"
-		      data-fragment-index="0">Source code under <img src="img/logo/lgpl.png" style="margin: 5px; position: absolute; height: 24px"></li>
+		      data-fragment-index="1">Source code under <img src="img/logo/lgpl.png" style="margin: 5px; position: absolute; height: 24px"></li>
 		  <li class="fragment"
-		      data-fragment-index="0"><a href="https://imas-python.readthedocs.io/en/latest/">Documentation</a>, <a href="https://pypi.org/project/imas-python/">package on PyPI</a></li>
+		      data-fragment-index="1"><a href="https://imas-python.readthedocs.io/en/latest/">Documentation</a>, <a href="https://pypi.org/project/imas-python/">package on PyPI</a></li>
 		  <li class="fragment"
 		      data-fragment-index="1">DD selection & conversion at runtime</li>
 		  <li class="fragment"
@@ -551,20 +562,18 @@
 	  </section>
 
 	  <section>
-	    <h3>The case of software with background IP</h3>
+	    <h3>Software with background intellectual property (BIP)</h3>
 	    <div class="r-vstack">
 	      <ul style="font-size: 28px">
 		<li class="fragment"
 		    data-fragment-index="1">IMAS relies on software developed within ITER Members (BIP)</li>
 		<li class="fragment"
-		    data-fragment-index="2">IO invests effort in using/combining/extending codes in IMAS (GIP)</li>
+		    data-fragment-index="1">IO invests effort in using/combining/extending codes in IMAS (GIP)</li>
 		<li class="fragment"
-		    data-fragment-index="3">Releasing GIP that contains BIP requires BIP to be open</li>
-		<li class="fragment"
-		    data-fragment-index="4">IO asked some code owners about the possibility to release their BIP as open source <span style="color: Lime">&rarr; a general trend in fusion?</span></li>
+		    data-fragment-index="2">IO asked code owners about the possibility to release their BIP as open source <span style="color: Lime">&rarr; a general trend in fusion?</span></li>
 	      </ul>
 	      <img class="fragment"
-		   data-fragment-index="4"
+		   data-fragment-index="2"
 		   src="img/BIP-software.svg"
 		   style="margin-top: -150px">
 	    </div>
@@ -573,8 +582,7 @@
 	  <section>
 	    <h3>Contributing back</h3>
 	    <h5 class="r-fit-text">A key aspect for project sustainability, can take several forms</h5>
-	    <table class="fragment"
-		   style="font-size: 24px; color: white;">
+	    <table style="font-size: 24px; color: white;">
 	      <thead>
 		<tr>
 		  <th>type</th>
@@ -673,10 +681,10 @@
 		</ul>
 	      </dd>
 	      <dt class="fragment"
-		  data-fragment-index="3"><b>Mitigations</b></dt>
+		  data-fragment-index="2"><b>Mitigations</b></dt>
 	      <dd>
 		<ul class="fragment"
-		    data-fragment-index="3"
+		    data-fragment-index="2"
 		    style="font-size: 32px">
 		  <li>targetted effort, identify success stories</li>
 		  <li>share mappings and experience on open platforms<sup><a href="#/links">6,7</a></sup></li>
@@ -710,16 +718,16 @@
 		    data-fragment-index="1"><span style="color: red">Large, complex, evolving</span> model (nesting)<br>
 		  &rarr; simplify with <span style="color: Lime">standard geometry, grids</span></li>
 		<li class="fragment"
-		    data-fragment-index="2"><span style="color: red">Mixing data model & interfaces</span><br>
+		    data-fragment-index="1"><span style="color: red">Mixing data model & interfaces</span><br>
 		  &rarr; <span style="color: Lime">separate interfaces</span> for flexibity</li>
 		<li class="fragment"
-		    data-fragment-index="3"><span style="color: red">Non-backward compatible changes</span><br>
+		    data-fragment-index="1"><span style="color: red">Non-backward compatible changes</span><br>
 		  &rarr; <span style="color: Lime">exceptional for active IDS</span>, mitigated?</li>
 		<li class="fragment"
-		    data-fragment-index="4">Some <span style="color: red">IDS lean towards tokamaks</span><br>
+		    data-fragment-index="2">Some <span style="color: red">IDS lean towards tokamaks</span><br>
 		  &rarr; more <span style="color: Lime">involvement from stellarators</span></li>
 		<li class="fragment"
-		    data-fragment-index="5">Initial <span style="color: red">focus on data producers</span><br>
+		    data-fragment-index="2">Initial <span style="color: red">focus on data producers</span><br>
 		  &rarr; <span style="color: Lime">balance with consumers</span> needs</li>
 	      </ul>
 	      <div class="fragment" data-fragment-index="1">
@@ -740,11 +748,16 @@
 	    <li class="fragment"
 		data-fragment-index="1">Software with BIP &rarr; IO asked owners for open licenses</li>
 	    <li class="fragment"
-		data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
-	    <li class="fragment"
-		data-fragment-index="3">Our hope: reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
-	    <li class="fragment"
-		data-fragment-index="4">Facilitate engagement from people outside fusion (AI/ML)</li>
+		data-fragment-index="2">Our vision:
+	      <ul>
+		<li class="fragment"
+		    data-fragment-index="2">Open IMAS metadata &rarr; FAIR data principles</li>
+		<li class="fragment"
+		    data-fragment-index="2">Reuse<span style="color: Lime">&#8599;</span> contributions<span style="color: Lime">&#8599;</span> code quality<span style="color: Lime">&#8599;</span> spread of effort<span style="color: red">&#8600;</span> administrative overheads<span style="color: red">&#8600;</span></li>
+		<li class="fragment"
+		    data-fragment-index="2">Facilitate engagement outside fusion (AI/ML)</li>
+	      </ul>
+	    </li>
 	  </ul>
 	</section>
 	  
